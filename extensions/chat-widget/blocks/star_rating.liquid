@@ -1,0 +1,15 @@
+{% comment %} 
+  Agenty Chatbot Native Embed 
+{% endcomment %}
+<script src="{{ 'chat-widget.js' | asset_url }}" defer></script>
+{{ 'chat-widget.css' | asset_url | stylesheet_tag }}
+
+<div id="agenty-chat-widget-root"></div>
+
+{% schema %}
+{
+  "name": "Agenty Chat Bot",
+  "target": "body",
+  "settings": []
+}
+{% endschema %}
